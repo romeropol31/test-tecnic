@@ -7,7 +7,7 @@
       <v-select v-model="sFamilies" class="mr-3" :items="aFamilies" label="Families" multiple clearable />
       <v-text-field v-model="search" label="Cercar..." style="max-width: 30vw;"/>
     </div>
-    <v-data-table :headers="headers" :items="filteredClients" :items-per-page="10" :search="search" class="elevation-2">
+    <v-data-table :headers="headers" :items="filteredClients" :items-per-page="13" :search="search" class="elevation-2" :footer-props="{'items-per-page-text':'Clients per pàgina'}">
       <template v-slot:item.actions="{item}">
         <v-btn icon @click="showClient(item.customerId)"><v-icon>mdi-eye</v-icon></v-btn>
       </template>

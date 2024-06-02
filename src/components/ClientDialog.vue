@@ -18,7 +18,7 @@
       </div>
       <div>
         <h2 class="mt-5 mb-2 ml-2">Productes</h2>
-        <v-data-table :headers="headers" :items="contractedProducts" :items-per-page="10">
+        <v-data-table :headers="headers" :items="contractedProducts" :items-per-page="10" :footer-props="{'items-per-page-text':'Productes per pàgina'}">
           <template v-slot:item.contract="{item}">
             <span v-if="item.mbSpeed">{{ item.mbSpeed }} mb/s</span>
             <span v-else-if="item.gbData">{{ item.gbData }} GB</span>
