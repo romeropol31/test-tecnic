@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app color="#fec23d" dark>
       <div class="d-flex align-center">
-        <h1>Parlem Telecom Project</h1>
+        <h1 style="color: black;">Parlem Telecom Projecte</h1>
       </div>
     </v-app-bar>
 
