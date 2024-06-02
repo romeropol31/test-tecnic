@@ -12,7 +12,7 @@
         <v-btn icon @click="showClient(item.customerId)"><v-icon>mdi-eye</v-icon></v-btn>
       </template>
     </v-data-table>
-    <v-dialog v-model="clientDialog.show" width="45vw">
+    <v-dialog v-if="clientDialog.show" v-model="clientDialog.show" width="45vw">
       <client-dialog-edit :customerId="clientDialog.customerId" />
     </v-dialog>
   </div>
@@ -53,7 +53,7 @@ export default {
   },
   methods:{
     async downloadDatas(){
-      const clients = await fetch('http://localhost:3000/clients').then(response => response.json())
+      const clients = await fetch('https://mockapi-test-tecnic.onrender.com/clients').then(response => response.json())
       .then(clients => clients);
       this.clients = clients;
 

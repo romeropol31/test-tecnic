@@ -63,8 +63,8 @@ export default {
   },
   methods: {
     async downloadClientDatas(){
-      const client = (await fetch('http://localhost:3000/clients?customerId='+this.customerId).then(response => response.json()).then(client => client))[0];
-      const products = await fetch('http://localhost:3000/products?customerId='+this.customerId).then(response => response.json()).then(client => client);
+      const client = (await fetch('https://mockapi-test-tecnic.onrender.com/clients?customerId='+this.customerId).then(response => response.json()).then(client => client))[0];
+      const products = await fetch('https://mockapi-test-tecnic.onrender.com/products?customerId='+this.customerId).then(response => response.json()).then(client => client);
 
       this.client = {...client,products:[...products]};
     }
