@@ -1,0 +1,86 @@
+{
+  "clients": [
+    {
+      "_id" : 555555,
+      "docType" : "nif",
+      "docNum" : "11223344E",
+      "email" : "it@parlem.com",
+      "customerId" : "11111",
+      "givenName" : "Enriqueta",
+      "familyName1" : "Parlem",
+      "phone" : "668668668"
+    },
+    {
+      "_id" : 666666,
+      "docType" : "nif",
+      "docNum" : "11223344F",
+      "email" : "client2@parlem.com",
+      "customerId" : "22222",
+      "givenName" : "Client2",
+      "familyName1" : "Escoltem",
+      "phone" : "668668790"
+    },
+    {
+      "_id" : 777777,
+      "docType" : "nie",
+      "docNum" : "X1234567X",
+      "email" : "client3@parlem.com",
+      "customerId" : "33333",
+      "givenName" : "Client3",
+      "familyName1" : "Escoltem",
+      "phone" : "568668790"
+    },
+    {
+      "_id" : 888888,
+      "docType" : "nif",
+      "docNum" : "11796794F",
+      "email" : "client4@parlem.com",
+      "customerId" : "44444",
+      "givenName" : "Client4",
+      "familyName1" : "Escoltem",
+      "phone" : "568013790"
+    }
+  ],
+  "products": [
+      {
+        "_id" : 1111111,
+        "productName" : "FIBRA 1000MB",
+        "mbSpeed": 1000,
+        "gbData":null,
+        "productTypeName" : "ftth",
+        "numeracioTerminal" : 933933933,
+        "soldAt" : "2019-01-09 14:26:17",
+        "customerId" : "11111"
+      },
+      {
+      "_id" : 1111112,
+      "productName" : "MOBIL 500GB",
+      "mbSpeed": null,
+      "gbData":500,
+      "productTypeName" : "4G",
+      "numeracioTerminal" : 696696969,
+      "soldAt" : "2020-08-01 18:30:27",
+      "customerId" : "11111"
+     },
+     {
+      "_id" : 1111113,
+      "productName" : "FIBRA 500MB",
+      "mbSpeed": 500,
+      "gbData":null,
+      "productTypeName" : "ftth",
+      "numeracioTerminal" : 696696967,
+      "soldAt" : "2020-03-01 12:55:27",
+      "customerId" : "22222"
+     },
+     {
+      "_id" : 11111124,
+      "productName" : "MOBIL 100GB",
+      "mbSpeed": null,
+      "gbData":100,
+      "productTypeName" : "4G",
+      "numeracioTerminal" : 696651969,
+      "soldAt" : "2023-05-01 15:21:27",
+      "customerId" : "33333"
+     }
+  ]   
+}
