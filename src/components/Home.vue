@@ -53,7 +53,7 @@ export default {
   },
   methods:{
     async downloadDatas(){
-      const clients = await fetch('https://mockapi-test-tecnic.onrender.com/clients').then(response => response.json())
+      const clients = await fetch('https://mockapi-json.vercel.app/clients').then(response => response.json())
       .then(clients => clients);
       this.clients = clients;
 
